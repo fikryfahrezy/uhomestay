@@ -10,7 +10,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./fe
+    working-directory: ./be
 
 jobs:
   ci:
