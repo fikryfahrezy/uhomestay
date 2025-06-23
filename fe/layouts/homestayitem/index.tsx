@@ -1,5 +1,4 @@
 import type { MemberHomestaysRes } from "@/services/member-homestay";
-import Image from "next/image";
 import styles from "./Styles.module.css";
 
 const defaultFunc = () => {};
@@ -23,11 +22,9 @@ const GalleryItem = ({
     >
       <div className={styles.cardContent}>
         <div className={styles.bannerContainer}>
-          <Image
+          <img
             src={url ? url : "/images/image/login-bg.svg"}
-            priority={true}
-            layout="fill"
-            objectFit="cover"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
             alt="Homestay Thumbnail"
           />
         </div>

@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { RiMenuFoldLine } from "react-icons/ri";
 import Link from "next/link";
-import Image from "next/image";
 import { useDashboardQuery } from "@/services/dashboard";
 import { LinkBox, LinkOverlay } from "@/components/linkoverlay";
 import Drawer from "@/components/drawer";
@@ -83,7 +82,7 @@ const LandingPage = () => {
           }`}
         >
           <div>
-            <Image
+            <img
               src="/images/image/logo.png"
               width={329}
               height={42}
@@ -219,14 +218,14 @@ const LandingPage = () => {
                                     }`}
                                   >
                                     <div className={styles.avatarImgContainer}>
-                                      <Image
+                                      <img
                                         src={
                                           typeof picUrl === "string" &&
                                           picUrl !== ""
                                             ? picUrl
                                             : "/images/image/person.png"
                                         }
-                                        layout="fill"
+                                        style={{ width: "100%", height: "100%" }}
                                         alt="Member Profile Picture"
                                       />
                                     </div>
@@ -260,10 +259,9 @@ const LandingPage = () => {
         >
           <div className={`${styles.sectionBody} ${styles.goalBody}`}>
             <div className={styles.goalImagContainer}>
-              <Image
+              <img
                 src="/images/image/coffee-garden-homestay.jpg"
-                layout="fill"
-                objectFit="cover"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 alt="Coffee Garden Homestay"
               />
             </div>

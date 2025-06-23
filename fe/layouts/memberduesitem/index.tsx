@@ -1,5 +1,4 @@
 import type { MembersDuesOut } from "@/services/member-dues";
-import Image from "next/image";
 import { DUES_STATUS } from "@/services/member-dues";
 import Badge from "@/components/badge";
 import styles from "./Styles.module.css";
@@ -26,9 +25,9 @@ const MemberDuesItem = ({ moreBtn, member }: MemberDuesItemProps) => {
     <div className={styles.memberItem}>
       <div className={styles.profileContainer}>
         <div className={styles.profileImgContainer}>
-          <Image
+          <img
             src={profile ? profile : "/images/image/person.png"}
-            layout="responsive"
+            style={{ width: "100%", height: "100%" }}
             width={150}
             height={150}
             alt="Member Profile Picture"

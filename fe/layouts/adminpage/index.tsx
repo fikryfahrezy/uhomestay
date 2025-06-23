@@ -1,7 +1,6 @@
 import type { MouseEvent } from "react";
 import type { LinkTreeProps } from "@/components/aside";
 import { useMemo } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMutation } from "react-query";
@@ -295,7 +294,7 @@ const AdminPage = ({ children, className }: JSX.IntrinsicElements["div"]) => {
       <nav className={styles.nav}>
         <Link href="/">
           <a>
-            <Image
+            <img
               src="/images/image/logo.png"
               width={329}
               height={42}

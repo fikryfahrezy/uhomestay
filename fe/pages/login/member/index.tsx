@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import Image from "next/image";
 import Link from "next/link";
 import { useMutation } from "react-query";
 import { memberLogin, useMember } from "@/services/member";
@@ -70,12 +69,10 @@ const Login = () => {
             <PageNav />
           </div>
           <div className={styles.sideImgContainer}>
-            <Image
+            <img
               src="/images/image/login-bg.png"
-              layout="fill"
-              objectFit="cover"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
               alt="Website Logo"
-              priority={true}
             />
           </div>
         </div>

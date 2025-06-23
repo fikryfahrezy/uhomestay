@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import Image from "next/image";
 import { idrCurrency, idrNumToWord } from "@/lib/fmt";
 import {
   CASHFLOW_TYPE,
@@ -21,9 +20,8 @@ const Finance = () => {
   ) : (
     <div>
       <header className={styles.header}>
-        <Image
+        <img
           src="/images/image/logo.png"
-          layout="fixed"
           width="300"
           height="35"
           alt="Website Logo"

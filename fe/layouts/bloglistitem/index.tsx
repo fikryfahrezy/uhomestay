@@ -1,5 +1,4 @@
 import type { ArticleOut } from "@/services/article";
-import Image from "next/image";
 import Card from "@/components/card";
 import styles from "./Styles.module.css";
 
@@ -26,15 +25,13 @@ const BlogListItem = ({ blog, popUp }: BlogListItem) => {
           )
         }
         bannerElement={
-          <Image
+          <img
             src={
               blog["thumbnail_url"]
                 ? blog["thumbnail_url"]
                 : "/images/image/login-bg.svg"
             }
-            priority={true}
-            layout="fill"
-            objectFit="cover"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
             alt="Blog Thumbnail"
           />
         }

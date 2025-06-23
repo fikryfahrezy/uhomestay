@@ -130,6 +130,8 @@ const Register = () => {
     });
   };
 
+  return <>Access denied.</>
+
   return (
     <>
       <main className={styles.pageContainer}>

@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { idrCurrency, idrNumToWord, yyyyMm } from "@/lib/fmt";
 import { useMembersDuesQuery, DUES_STATUS } from "@/services/member-dues";
@@ -31,9 +30,8 @@ const Dues = () => {
   ) : (
     <div>
       <header className={styles.header}>
-        <Image
+        <img
           src="/images/image/logo.png"
-          layout="fixed"
           width="300"
           height="35"
           alt="Website Logo"

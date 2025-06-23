@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Styles.module.css";
 
 type MemberItemProps = {
@@ -18,9 +17,9 @@ const MemberItem = ({
     <div className={styles.memberItem}>
       <div className={styles.profileContainer}>
         <div className={styles.profileImgContainer}>
-          <Image
+          <img
             src={profilePicUrl ? profilePicUrl : "/images/image/person.png"}
-            layout="responsive"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
             width={150}
             height={150}
             alt="Member Profile Picture"
