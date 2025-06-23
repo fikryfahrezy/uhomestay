@@ -28,8 +28,8 @@
 
 .bannerContainer {
   position: relative;
-  min-width: 250px;
-  min-height: 250px;
+  width: 250px;
+  height: 250px;
   background-color: #7f7f7f;
 }
 
